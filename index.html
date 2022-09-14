@@ -5,10 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika Negative">
     <script src="index.js" defer></script>
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <div class="board"></div>
+    <div class="before-game">
+        <h1>Tic Tac Toe</h1>
+        <div class="name-container">
+            <div>
+                <label for="player1">player1's name (X)</label>
+                <input type="text" value="player1" id="player1" name="player1">
+            </div>
+            <p>Versus</p>
+            <div>
+                <label for="player2">player2's name (O)</label>
+                <input type="text" value="player2" id="player2" name="player2">
+            </div>
+        </div>
+        <button type="button" class="start">Start</button>
+    </div>
+    <div class="game hide">
+        <div class="turn">
+            <p class="first-player"></p>
+            <p class="second-player"></p>
+        </div>
+        <div class="board"></div>
+        <div class="game-end"></div>
+        <div class="buttons"></div>
+    </div>
 </body>
 </html>
