@@ -31,3 +31,30 @@ body {
     justify-content: space-between;
     width: 25%;
 }
+
+.top-row {
+    border-top: none;
+}
+
+.bottom-row {
+    border-bottom: none;
+}
+
+.right-column {
+    border-right: none;
+}
+
+.left-column {
+    border-left: none;
+}
+
+.buttons {
+    background-color: green;
+    width: 100%;
+    height: 50px;
+}
+
+.play-again {
+    width: 200px;
+    height: 30px;
+}
