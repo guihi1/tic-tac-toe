@@ -2,12 +2,42 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Signika Negative", sans-serif;
+}
+
+p {
+    font-size: 26px;
+}
+
+h1 {
+    font-size: 50px;
 }
 
 body {
+    background-color: #0A0908;
+    color: white;
+}
+
+.game, .before-game{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+}
+
+.game {
+    height: 100vh;
+    gap: 20px;
+}
+
+.before-game {
+    gap: 50px;
+}
+
+.hide {
+    display: none;
 }
 
 .board {
@@ -17,7 +47,7 @@ body {
 }
 
 .square {
-    border: 2px solid black;
+    border: 2px solid #22333B;
     width: 125px;
     height: 125px;
     display: flex;
@@ -49,12 +79,34 @@ body {
 }
 
 .buttons {
-    background-color: green;
     width: 100%;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.play-again {
-    width: 200px;
-    height: 30px;
+.play-again, .start {
+    background-color: #5E503F;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.play-again:hover, .start:hover {
+    background-color: #C6AC8F;
+    color: black;
+}
+
+.name-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.name-container div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
