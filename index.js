@@ -35,7 +35,7 @@ const players = (name, choice) => {
     return {name, choice};
 };
 
-const start = (() => {
+const startPlaying = (() => {
     const start = document.querySelector(".start");
     const game = document.querySelector(".game");
     const beforeGame = document.querySelector(".before-game");
